@@ -1,5 +1,5 @@
 {
-  "name": "tivie/Backbone-Mediator",
+  "name": "Cloneoner/Backbone-Mediator",
   "version": "1.0.0",
   "main": "backbone-mediator.js",
   "description": "An Event Mediator Manager for Backbone library",

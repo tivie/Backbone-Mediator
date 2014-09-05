@@ -17,9 +17,18 @@
 (function(factory){
   'use strict';
 
-  if (typeof define === 'function' && define.amd) {
+   if (typeof define === 'function' && define.amd) 
+  {
     define(['underscore', 'backbone'], factory);
-  } else {
+  } 
+  // Next for Node.js or CommonJS.
+  else if (typeof exports !== 'undefined') {
+    var _ = require('underscore');
+    var Backbone = require('backbone');
+    factory(_, Backbone);
+  // Finally, as a browser global.
+  } 
+  else {
     factory(_, Backbone);
   }
 
